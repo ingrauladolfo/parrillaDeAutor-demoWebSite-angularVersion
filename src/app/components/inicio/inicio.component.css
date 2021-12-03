@@ -1,0 +1,15 @@
+.example-card {
+    max-width: 400px;
+}
+
+mat-card-content {
+    background: #741b1d !important;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+mat-card-content:hover {
+    background: #9f6006 !important;
+    color: #b49e5e !important;
+    text-decoration: none;
+}

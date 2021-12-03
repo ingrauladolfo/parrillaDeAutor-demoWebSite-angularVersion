@@ -1,0 +1,37 @@
+<!-- <p>inicio works!</p> -->
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
+
+  <ul class="uk-slideshow-items">
+    <li>
+      <img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
+    </li>
+    <li>
+      <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" autoplay loop muted playsinline
+        uk-cover></video>
+    </li>
+    <li>
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&controls=0&showinfo=0&rel=0&loop=1&modestbranding=1&wmode=transparent&playsinline=1"
+        width="560" height="315" frameborder="0" allowfullscreen uk-cover></iframe>
+    </li>
+  </ul>
+
+  <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+    uk-slideshow-item="previous"></a>
+  <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+    uk-slideshow-item="next"></a>
+
+</div>
+
+<div class="container">
+  <div class="row mx-auto text-center mt-5 justify-content-center">
+      <mat-card class="example-card" *ngFor="let images of imagesBasic">
+          <mat-card-content>
+            <img mat-card-image [src]="images.img">
+              
+
+          </mat-card-content>
+      </mat-card>
+
+  </div>
+</div>

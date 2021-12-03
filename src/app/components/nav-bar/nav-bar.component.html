@@ -1,0 +1,19 @@
+<!-- <p>nav-bar works!</p> -->
+<mat-toolbar >
+    <mat-toolbar-row>
+        <button mat-button class="example-icon" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <div class="spacer"></div>
+        <button mat-button>
+            <a href="#" target="_blank">  <img src="../../../assets/images/logo/logo-parrillero.png" width="70" height="50"
+                alt="Logo parrilla"> </a>
+                Parrilla de Autor
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="['/']">Inicio</button>
+    <button mat-menu-item [routerLink]="['nuestro-menu']">Nuestro menú</button>
+    <button mat-menu-item [routerLink]="['contacto']">Contáctanos</button>
+</mat-menu>
